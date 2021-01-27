@@ -10,8 +10,8 @@ jobs:
     steps:
       - name: checkout
         uses: actions/checkout@v1
-      - name: Create PR to branch
-        uses: gorillio/cherry-pick@master
+      - name: Create PR to other branches, on commits to a branch
+        uses: gorillio/github-action-cherry-pick@1.2
         with:
           pr_branch: "main"
         env:
